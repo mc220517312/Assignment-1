@@ -3,8 +3,11 @@
 # Import pandas
 import pandas as pd
 
+recent_grade_url = "https://raw.githubusercontent.com/mc220517312/Assignment-1/master/recent_grads.csv"
+
+
 # Use pandas to read in recent_grads.csv
-recent_grads = pd.read_csv('C:/Users/andrew.chan/Documents/Andrew Document/Unitar/SEM3/Big Data/Assignment 1/recent_grads.csv')
+recent_grads = pd.read_csv(recent_grade_url, sep=',')
 
 # Print the shape
 print(recent_grads.shape)
@@ -124,6 +127,10 @@ print(dept_stats)
 
 ####Section 3####
 ###Exercise 1###
+
+low_wage_jobs = recent_grads['low_wage_jobs']
+unemployment_rate = recent_grads['unemployment_rate']
+
 # Import matplotlib
 import matplotlib.pyplot as plt
 
@@ -147,6 +154,8 @@ plt.scatter(unemployment_rate, low_wage_jobs, color = "r", marker = "^")
 plt.show()
 
 ###Exercise 3###
+sharewomen = recent_grads['sharewomen']
+
 # Plot a histogram of sharewomen
 plt.hist(sharewomen)
 
