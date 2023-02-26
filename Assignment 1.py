@@ -15,10 +15,11 @@ print('Section 1, Exercise 1')
 # Print the shape
 print(recent_grads.shape)
 
+###Exercise 2###
+
 # Print Exercise 2
 print('Section 1, Exercise 2')
 
-###Exercise 2###
 # Print .dtypes
 print(recent_grads.dtypes)
 
