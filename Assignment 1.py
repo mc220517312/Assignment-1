@@ -74,6 +74,10 @@ print('Section 1, Exercise 5')
 print(max_sw)
 
 ###Exercise: Selecting a Row###
+
+# Print Exercise 
+print('Section 1, Exercise')
+
 # Output the row containing the maximum percentage of women
 print(recent_grads[sw_col == max_sw])
 
